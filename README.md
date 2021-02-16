@@ -4,7 +4,7 @@ Dialogflow Entity Multiplier with AWS Serverless
 
 ### Stack
 
--   Typescript
+-   TypeScript
 -   Nodejs
 -   Lambda
 -   S3
@@ -434,5 +434,28 @@ Dialogflow Entity Multiplier with AWS Serverless
       ]
     }
   ]
+}
+```
+
+### Layer Dependencies
+
+```
+"devDependencies": {
+    "@types/aws-lambda": "^8.10.72",
+    "@types/node": "^14.14.28",
+    "@typescript-eslint/eslint-plugin": "^4.15.1",
+    "@typescript-eslint/parser": "^4.15.1",
+    "aws-sdk": "^2.845.0",
+    "axios": "^0.21.1",
+    "eslint": "^7.20.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.2.1",
+    "reflect-metadata": "^0.1.13",
+    "typescript": "^4.1.5"
+},
+"dependencies": {
+    "class-transformer": "^0.3.2",
+    "class-validator": "^0.13.1"
 }
 ```
