@@ -263,7 +263,7 @@ function divideItems(data: EntityList): EntityList {
     return responseObj;
 }
 
-async function putObjectToS3(key: string, data: any) {
+async function putObjectToS3(key: string, data: any):Promise<{status:boolean,data?:any,error?:any}> {
     console.info('Starting PutObject S3');
     let S3Bucket = new AWS.S3();
 
