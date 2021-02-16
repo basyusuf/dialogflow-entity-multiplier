@@ -45,7 +45,7 @@ export const handler = async (event: APIGatewayProxyEvent, context: Context): Pr
             if (uploadTyposArr.status) {
                 console.info(uploadTyposArr.data);
                 responseStatus.status = true;
-                responseStatus.url = `https://thycargyawbqueries.s3.eu-central-1.amazonaws.com/${generatedKey}`;
+                responseStatus.url = `https://nestjs-task.s3.eu-central-1.amazonaws.com/${generatedKey}`;
             } else {
                 console.info(uploadTyposArr.error);
             }
